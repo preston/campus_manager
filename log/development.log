@@ -1,0 +1,1126 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-18 12:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (133.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (280.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (162.7ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (113.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (147.5ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (132.1ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (45.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateCourses (20100118193019)
+  [4;36;1mSQL (139.9ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118193019')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `buildings`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `courses`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `courses`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `rooms`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `rooms`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-24 19:40:59) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (22.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+Migrating to CreateBuildings (20100118191253)
+Migrating to CreateRooms (20100118191352)
+Migrating to CreateCourses (20100118193019)
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-24 22:12:51) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:13:55) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/courses
+Rendering courses/index
+Completed in 53ms (View: 48, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#new (for 127.0.0.1 at 2010-01-24 22:14:00) [GET]
+  [4;36;1mCourse Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+Rendering template within layouts/courses
+Rendering courses/new
+
+ActionView::TemplateError (undefined method `string' for #<Course id: nil, created_at: nil, updated_at: nil>) on line #8 of app/views/courses/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :string %><br />
+8:     <%= f.text_field :string %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :string %><br />
+
+    app/views/courses/new.html.erb:8
+    app/views/courses/new.html.erb:3
+    app/controllers/courses_controller.rb:29:in `new'
+
+Rendered rescues/_trace (110.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (28.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:36:17) [GET]
+
+ArgumentError (Unknown key(s): dependant):
+  (eval):3:in `has_many'
+  app/models/course.rb:3
+  app/controllers/courses_controller.rb:5:in `index'
+
+Rendered rescues/_trace (103.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:36:32) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+Completed in 61ms (View: 27, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:45:36) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+Completed in 31ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:47:30) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (187.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (374.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (263.2ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (104.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (101.6ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (26.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (121.2ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (106.8ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (97.4ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (106.1ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (133.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (102.2ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (89.4ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (82.7ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (108.6ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (106.9ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (55.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (136.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (91.8ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.4ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (89.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (95.5ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (94.8ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (94.6ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (94.2ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.1ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (103.3ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (89.7ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (79.1ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (97.3ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (96.0ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (114.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (91.7ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (104.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (94.4ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (95.5ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (107.6ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (96.1ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (83.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.3ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (100.2ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (98.8ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (93.8ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (84.7ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (97.7ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (53.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (124.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (93.4ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (90.3ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (80.6ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (86.1ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (95.7ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (96.3ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (90.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.2ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (101.8ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (91.3ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (97.4ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (84.8ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (57.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (123.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.1ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (89.5ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (71.1ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (85.0ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (96.2ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (85.0ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (71.8ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (82.1ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (77.8ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (79.9ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (80.8ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (84.4ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (95.7ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (212.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (91.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (104.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (102.6ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (91.7ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (97.5ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (96.5ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (95.9ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (84.2ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.3ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (100.5ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (93.1ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (95.7ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (104.4ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (61.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (92.4ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (104.3ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (78.9ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (93.1ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (95.8ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (85.7ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (73.5ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (84.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (91.8ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (99.4ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (101.3ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (94.7ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (95.2ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (88.5ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (102.6ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (81.4ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (85.8ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (85.2ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (95.3ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (82.8ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.3ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (100.9ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (94.1ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (11.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (85.7ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (85.1ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (43.8ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (81.4ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (68.6ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (74.1ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (73.6ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (76.1ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (78.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (92.0ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (90.9ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (88.4ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (83.3ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (85.0ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (85.5ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (114.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (93.2ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (93.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (89.2ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (82.5ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (85.4ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (84.8ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (96.4ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (90.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.4ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (100.8ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (91.5ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (86.0ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (96.9ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (53.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (155.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (92.3ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (114.2ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (90.5ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (81.1ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (107.7ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (118.4ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (107.3ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (85.7ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (105.5ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (99.5ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (94.4ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (119.3ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (118.2ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (71.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (278.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (93.2ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (105.2ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (104.6ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (107.2ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (96.3ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (95.5ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (84.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.7ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (110.2ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (83.5ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (88.4ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (95.6ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (83.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (200.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (91.7ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (89.8ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (84.0ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `building_id` int(11) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (96.1ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `semester_id` int(11) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (84.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (113.9ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (101.1ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (100.7ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (91.7ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (96.0ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (97.7ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (34.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSessionTable (20100118022132)
+  [4;36;1mSQL (92.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (105.1ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (89.2ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118022132')[0m
+Migrating to CreateBuildings (20100118191253)
+  [4;36;1mSQL (92.4ms)[0m   [0;1mCREATE TABLE `buildings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191253')[0m
+Migrating to CreateRooms (20100118191352)
+  [4;36;1mSQL (95.6ms)[0m   [0;1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `building_id` int(11) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118191352')[0m
+Migrating to CreateLessons (20100125051224)
+  [4;36;1mSQL (95.7ms)[0m   [0;1mCREATE TABLE `lessons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051224')[0m
+Migrating to CreateCourses (20100125051446)
+  [4;36;1mSQL (96.5ms)[0m   [0;1mCREATE TABLE `courses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `semester_id` int(11) NOT NULL, `name` varchar(255) NOT NULL, `description` text NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100125051446')[0m
+Migrating to ClearanceCreateUsers (20100125052550)
+  [4;36;1mSQL (84.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `encrypted_password` varchar(128), `salt` varchar(128), `confirmation_token` varchar(128), `remember_token` varchar(128), `email_confirmed` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (104.1ms)[0m   [0mCREATE INDEX `index_users_on_id_and_confirmation_token` ON `users` (`id`, `confirmation_token`)[0m
+  [4;36;1mSQL (101.1ms)[0m   [0;1mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (88.1ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125052550')[0m
+Migrating to CreateStudents (20100125053259)
+  [4;35;1mSQL (92.0ms)[0m   [0mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11) NOT NULL, `course_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053259')[0m
+Migrating to CreateInstructors (20100125053310)
+  [4;35;1mSQL (98.4ms)[0m   [0mCREATE TABLE `instructors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11) NOT NULL, `course_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125053310')[0m
+Migrating to CreateSemesters (20100125054434)
+  [4;35;1mSQL (96.1ms)[0m   [0mCREATE TABLE `semesters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `start_date` date, `end_date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100125054434')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `buildings`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `buildings`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `courses`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `courses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `instructors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `instructors`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `lessons`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `lessons`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `lessons`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rooms`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `rooms`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `semesters`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `semesters`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-01-24 22:56:18) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/]

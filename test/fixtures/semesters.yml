@@ -1,0 +1,9 @@
+2010_spring:
+  name: Spring 2010
+  start_date: 2010-01-01
+  end_date: 2010-06-01
+
+2010_fall:
+  name: Fall 2010
+  start_date: 2010-08-01
+  end_date: 2010-12-31

@@ -1,9 +1,9 @@
 class Student < ActiveRecord::Base
   
-  validate_presence_of  :user
-  validate_presence_of  :course
+  belongs_to  :course
+  belongs_to  :user
 
-  validate_presence_of  :user
-  validate_presence_of  :course
+  validates_presence_of :course
+  validates_presence_of :user
   
 end

@@ -1,8 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :semesters
-
-
-
 
   Clearance::Routes.draw(map)
   map.resources :lessons
@@ -11,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :buildings
   map.resources :instructors
   map.resources :students
+  map.resources :links
+  map.resources :semesters
   
   # The priority is based upon order of creation: first created -> highest priority.
 

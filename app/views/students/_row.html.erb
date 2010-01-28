@@ -1,0 +1,7 @@
+<% student = row %>
+<tr id="student_<%= student.id %>" class="<%= cycle 'odd', 'even', :name => 'students' %>">	
+  <td><%= link_to h(student.user.email), user_path(student.user) %></td>
+	<td><%= student.user.students.count %></td>
+  <td><%= link_to image_tag('/images/icons/pencil.png'), edit_student_path(student) %>
+  <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => student_url(student), :method => :delete %></td>
+</tr>

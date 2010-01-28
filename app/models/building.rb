@@ -1,9 +1,9 @@
 class Building < ActiveRecord::Base
   
-  has_name  :rooms
+  has_many  :rooms, :dependent => :destroy
   
-  validate_presence_of  :code
-  validate_presence_of  :name
-  validate_presence_of  :dsecription
+  validates_presence_of  :code
+  validates_presence_of  :name
+  validates_presence_of  :dsecription
   
 end

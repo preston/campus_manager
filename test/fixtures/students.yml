@@ -1,9 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+xavier_cst100_2010_spring:
+  user: xavier
+  course: 2010_cst100_spring
 
-one:
-  user_id: 
-  course_id: 
+xavier_cst200_2010_fall:
+  user: xavier
+  course: 2010_cst200_fall
 
-two:
-  user_id: 
-  course_id: 
+yancy_cst533_2010_spring:
+  user: yancy
+  course: 2010_cst533_spring
+
+zelda_cst533_2010_spring:
+  user: yancy
+  course: 2010_cst533_spring
+    
+zelda_cst200_2010_fall:
+  user: yancy
+  course: 2010_cst200_fall

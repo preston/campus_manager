@@ -1,11 +1,7 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+cst533_1:
+  name: Introduction
+  description: An overview of the material we will be covering in this course.
 
-one:
-  course_id: 
-  name: MyString
-  description: MyText
-
-two:
-  course_id: 
-  name: MyString
-  description: MyText
+cst533_2:
+  name: Horizontal Architectures
+  description: Loris impsum seu rcheurca. Hu nteb nobeuobuoe huoucr "Eeue Ruh NBCB" is cr bw note cicphr honteh.

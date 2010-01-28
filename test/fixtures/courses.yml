@@ -1,14 +1,23 @@
-cst533:
+2010_cst533_spring:
   name: CST 533
   description: Database-centric Enterprise Application Development
   semester: 2010_spring
+  room: cntr_152
 
-cst494:
+2010_cst100_spring:
   name: CST 100
   description: Object-Oriented Software Development 1
   semester: 2010_spring
-  
-cst494:
+  room: cntr_130
+
+2010_cst100_fall:
   name: CST 100
   description: Object-Oriented Software Development 1
   semester: 2010_fall
+  room: cntr_120
+  
+2010_cst200_fall:
+  name: CST 200
+  description: Object-Oriented Software Development 2
+  semester: 2010_fall
+  room: cntr_130

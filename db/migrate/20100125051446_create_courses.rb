@@ -1,6 +1,7 @@
 class CreateCourses < ActiveRecord::Migration
   def self.up
     create_table :courses do |t|
+      t.integer :room_id, :null => false
       t.integer :semester_id, :null => false
       t.string  :name, :null => false
       t.text    :description, :null => false

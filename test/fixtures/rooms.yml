@@ -1,7 +1,15 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+cntr_120:
+  name: 120
+  building: cntr
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+cntr_130:
+  name: 130
+  building: cntr
+
+cntr_140:
+  name: 140
+  building: cntr
+
+cntr_152:
+  name: 152
+  building: cntr

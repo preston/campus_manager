@@ -1,0 +1,24 @@
+# Users that will only be instructors..
+alice:
+  email: alice@example.com
+
+bob:
+  email: bob@example.com
+
+charlie:
+  email: charlie@example.com
+  
+# Users that will only be students..
+xavier:
+  email: xavier@example.com
+
+yancy:
+  email: yancy@example.com
+
+zelda:
+  email: zelda@example.com
+
+
+# Users that will be both teachers and students..
+preston:
+  email: preston@asu.edu

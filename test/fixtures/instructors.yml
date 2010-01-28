@@ -1,9 +1,15 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+preston_cst533_spring:
+  user: preston
+  course: 2010_cst533_spring
 
-one:
-  user_id: 
-  course_id: 
+alice_cst100_spring:
+  user: alice
+  course: 2010_cst100_spring
 
-two:
-  user_id: 
-  course_id: 
+alice_cst100_fall:
+  user: alice
+  course: 2010_cst100_fall
+
+charlie_cst200_fall:
+  user: fall
+  course: 2010_cst200_fall

@@ -4,18 +4,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Buildings: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <title>Campus Manager <%= " :: #{h(@title)}" if @title %></title>
+  <%= stylesheet_link_tag 'reset', 'default' %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
 
-<div id="flash">
-      <% flash.each do |key, value| -%>
-        <div id="flash_<%= key %>"><%=h value %></div>
-      <% end -%>
-    </div>
+<div id="everything">
+	
+	<div id="title"><%= link_to 'Campus Manager', '/' %></div>
+	
+	<div id="content_top">&nbsp;</div>
+	
+	<div id="content_middle">
+	
+ 	   <ul id="navigation">	
+ 	   	<li><%= link_to "Courses", courses_path %></li>
+ 	   	<li><%= link_to "Buildings", buildings_path %></li>
+ 	   	<li><%= link_to "Users", users_path %></li>
+ 	   </ul>
+ 	
 
-<%= yield %>
+ 	
+ 	   <div id="page">
+			<div id="flash">
+		      <% flash.each do |key, value| -%>
+		        <div id="flash_<%= key %>"><%=h value %></div>
+		      <% end -%>
+		    </div>
+			<%= yield  %>
+ 	   </div>
+ 	   
+ 	   <div id="footer">
+ 	   	<p>Campus Manager © <%= Time.now.year %> <a href="http://www.prestonlee.com">Preston Lee</a>. All rights reserved.</p>
+ 	   	<p>Manage courses at your campus for free. Developed for <a href="http://www.asu.edu/classes">CST 533</a> at <a href="http://www.asu.edu">Arizona State University</a>.</p>
+ 	   </div>
+	</div>
+	<div id="content_bottom">&nbsp;</div>
+	
+</div>
 
 </body>
 </html>

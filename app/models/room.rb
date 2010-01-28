@@ -1,9 +1,11 @@
 class Room < ActiveRecord::Base
+
+  has_many    :courses # Do not cascade delete courses when removing a room!!!
+  belongs_to  :building
+
+  validates_presence_of  :building
+  validates_presence_of  :name
   
-  validate_presence_of  :building
-  validate_presence_of  :name
-  
-  # Only allow one room of a given name per building.
-  validate_uniqueness_of  :building, :scope => [:name]
+  validates_uniqueness_of  :building, :scope => [:name] # Only allow one room of a given name per building.
   
 end

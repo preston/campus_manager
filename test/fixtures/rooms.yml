@@ -1,15 +1,19 @@
 cntr_120:
-  name: 120
+  name: '120'
+  description: Large auditorium room capable of seating up to 300 people with two configurable dividing walls. 
   building: cntr
 
 cntr_130:
-  name: 130
+  name: '130'
+  description: Small lecture room.
   building: cntr
 
 cntr_140:
-  name: 140
+  name: '140'
+  description: Medium-sized lecture hall.
   building: cntr
 
 cntr_152:
-  name: 152
+  name: '152'
+  description: Small computer lab with individual Windows workstations.
   building: cntr

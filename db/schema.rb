@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20100127214934) do
     t.string   "code",        :null => false
     t.string   "name",        :null => false
     t.text     "description", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "courses", :force => true do |t|
@@ -24,78 +24,78 @@ ActiveRecord::Schema.define(:version => 20100127214934) do
     t.integer  "semester_id", :null => false
     t.string   "name",        :null => false
     t.text     "description", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "instructors", :force => true do |t|
     t.integer  "user_id",    :null => false
     t.integer  "course_id",  :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "lessons", :force => true do |t|
     t.string   "name",        :null => false
     t.text     "description", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "links", :force => true do |t|
     t.integer  "course_id",  :null => false
     t.string   "name",       :null => false
     t.string   "url",        :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "rooms", :force => true do |t|
     t.integer  "building_id", :null => false
     t.string   "name",        :null => false
     t.text     "description", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "semesters", :force => true do |t|
-    t.string   "name"
-    t.date     "start_date"
-    t.date     "end_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name",       :null => false
+    t.date     "start_date", :null => false
+    t.date     "end_date",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text     "data",       :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
-  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id", :unique => true
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at", :unique => true
 
   create_table "students", :force => true do |t|
     t.integer  "user_id",    :null => false
     t.integer  "course_id",  :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email"
-    t.string   "encrypted_password", :limit => 128
-    t.string   "salt",               :limit => 128
-    t.string   "confirmation_token", :limit => 128
-    t.string   "remember_token",     :limit => 128
+    t.string   "email",                                                :null => false
+    t.string   "encrypted_password", :limit => 128,                    :null => false
+    t.string   "salt",               :limit => 128,                    :null => false
+    t.string   "confirmation_token", :limit => 128,                    :null => false
+    t.string   "remember_token",     :limit => 128,                    :null => false
     t.boolean  "email_confirmed",                   :default => false, :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                           :null => false
+    t.datetime "updated_at",                                           :null => false
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email"
-  add_index "users", ["id", "confirmation_token"], :name => "index_users_on_id_and_confirmation_token"
-  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["id", "confirmation_token"], :name => "index_users_on_id_and_confirmation_token", :unique => true
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token", :unique => true
 
 end

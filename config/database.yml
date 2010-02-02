@@ -1,20 +1,29 @@
-development:
-  adapter: mysql
-  # database: db/development.sqlite3
-  host: 127.0.0.1
-  database: campus_manager_development
-  port: 3306
-  username: campus_manager
-  password: password
-  pool: 5
-  timeout: 5000
+# development:
+#   adapter: mysql
+#   host: 127.0.0.1
+#   database: campus_manager_development
+#   port: 3306
+#   username: campus_manager
+#   password: password
+#   pool: 5
+#   timeout: 5000
+# 
+# test:
+#   adapter: mysql
+#   database: campus_manager_test
+#   host: 127.0.0.1
+#   port: 3306
+#   username: campus_manager
+#   password: password
+#   pool: 5
+#   timeout: 5000
 
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 2
+  
 test:
-  adapter: mysql
-  database: campus_manager_test
-  host: 127.0.0.1
-  port: 3306
-  username: campus_manager
-  password: password
-  pool: 5
-  timeout: 5000
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 2

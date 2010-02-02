@@ -1,18 +1,16 @@
-<h1>Listing buildings</h1>
+<h1><%= @title = "Buildings" %></h1>
 
 <table>
-  <tr>
+<thead>  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Rooms</th>
+    <th>Actions</th>
   </tr>
+</thead>
 
-<% @buildings.each do |building| %>
-  <tr>
-    <td><%= link_to 'Show', building %></td>
-    <td><%= link_to 'Edit', edit_building_path(building) %></td>
-    <td><%= link_to 'Destroy', building, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<tbody>
+	<%= render :partial => 'buildings/row', :collection => @buildings %>
+</tbody>
 </table>
-
-<br />
-
-<%= link_to 'New building', new_building_path %>

@@ -4313,3 +4313,1367 @@ ActionController::UnknownAction (No action responded to show. Actions: create an
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-01 14:00:10) [GET]
+  [4;35;1mCourse Load (199.2ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (129.6ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (53.1ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (26.1ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.6ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (13.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (510.8ms)
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (6.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (7.8ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (8.9ms)
+Completed in 1054ms (View: 451, DB: 612) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-01 14:00:31) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (109.0ms)
+  [4;36;1mRoom Load (0.9ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (7.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (6.0ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (7.1ms)
+Completed in 157ms (View: 122, DB: 13) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Clearance::UsersController#index (for 127.0.0.1 at 2010-02-01 14:00:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clearance/users"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-01 14:00:36) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+Completed in 113ms (View: 106, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-01 14:00:37) [GET]
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.3ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (35.3ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (6.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (5.5ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (6.3ms)
+Completed in 68ms (View: 48, DB: 12) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-01 14:13:11) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.3ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (99.7ms)
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (7.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (5.6ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (6.2ms)
+Completed in 131ms (View: 112, DB: 11) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCourse Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSemester Load (0.0ms)[0m   [0;1mMysql::Error: FUNCTION campus_manager_development.RANDOM does not exist: SELECT * FROM `semesters` ORDER BY RANDOM() LIMIT 1[0m
+  [4;35;1mSemester Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'RANDOM' in 'order clause': SELECT * FROM `semesters` ORDER BY RANDOM LIMIT 1[0m
+  [4;36;1mSemester Load (1.1ms)[0m   [0;1mSELECT * FROM `semesters` LIMIT 1[0m
+  [4;35;1mSemester Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mRoom Load (0.8ms)[0m   [0;1mSELECT * FROM `rooms` LIMIT 1[0m
+  [4;35;1mRoom Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCourse Create (94.1ms)[0m   [0mINSERT INTO `courses` (`room_id`, `name`, `created_at`, `semester_id`, `updated_at`, `description`) VALUES(234899329, 'my name', '2010-02-01 21:39:02', 9726580, '2010-02-01 21:39:02', 'test_description')[0m
+  [4;36;1mSQL (23.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#edit (for 127.0.0.1 at 2010-02-01 14:39:56) [GET]
+  Parameters: {"id"=>"120222578"}
+  [4;35;1mCourse Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 120222578) [0m
+Rendering template within layouts/default
+Rendering courses/edit
+Completed in 79ms (View: 69, DB: 2) | 200 OK [http://localhost/courses/120222578/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#update (for 127.0.0.1 at 2010-02-01 14:40:01) [PUT]
+  Parameters: {"course"=>{"name"=>"", "description"=>"Object-Oriented Software Development 1"}, "commit"=>"Update", "authenticity_token"=>"9IgZcOPDE5saXvphb1IloLY3wAWekMK4GYvCSmmVQtY=", "id"=>"120222578"}
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (1.6ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 120222578) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSemester Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+  [4;36;1mSemester Load (0.6ms)[0m   [0;1mSELECT * FROM `semesters` WHERE (`semesters`.`id` = 9726580) [0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/default
+Rendering courses/edit
+Completed in 103ms (View: 10, DB: 7) | 200 OK [http://localhost/courses/120222578]
+New Relic Agent not running
+New Relic Agent not running
+New Relic Agent not running
+/!\ FAILSAFE /!\  2010-02-02 08:11:00 -0700
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `block in require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    /opt/local/lib/ruby1.9/1.9.1/monitor.rb:190:in `mon_synchronize'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-02-02 08:11:34 -0700
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `block in require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    /opt/local/lib/ruby1.9/1.9.1/monitor.rb:190:in `mon_synchronize'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `block in call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+New Relic Agent not running
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:11:40) [GET]
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (22.6ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (131.8ms)
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.9ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.8ms)
+Completed in 346ms (View: 224, DB: 34) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:11:55) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.6ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.3ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (31.2ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (3.1ms)
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.6ms)
+Completed in 53ms (View: 35, DB: 13) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:11:56) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Clearance::UsersController#index (for 127.0.0.1 at 2010-02-02 08:11:58) [GET]
+  Parameters: {"controller"=>"clearance/users", "action"=>"index"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  <internal:prelude>:8:in `synchronize'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:12:02) [GET]
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (29.6ms)
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (4.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (3.2ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.7ms)
+Completed in 93ms (View: 35, DB: 12) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#new (for 127.0.0.1 at 2010-02-02 08:12:06) [GET]
+  [4;36;1mCourse Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+Rendering template within layouts/default
+Rendering courses/new
+Completed in 38ms (View: 30, DB: 2) | 200 OK [http://localhost/courses/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:12:33) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.7ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.6ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (31.2ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.8ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.7ms)
+Completed in 59ms (View: 41, DB: 12) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:13:12) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:13:15) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.6ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (30.1ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.7ms)
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.6ms)
+Completed in 51ms (View: 33, DB: 12) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:13:32) [GET]
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.9ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (31.3ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.8ms)
+  [4;35;1mRoom Load (0.2ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (2.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.6ms)
+Completed in 100ms (View: 41, DB: 15) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:13:47) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.7ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.3ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (30.8ms)
+  [4;36;1mRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.9ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.7ms)
+Completed in 52ms (View: 34, DB: 12) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:15:20) [GET]
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.7ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (30.3ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.9ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.6ms)
+Completed in 59ms (View: 41, DB: 12) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemestersController#index (for 127.0.0.1 at 2010-02-02 08:15:23) [GET]
+  [4;36;1mSemester Load (0.5ms)[0m   [0;1mSELECT * FROM `semesters` [0m
+Rendering template within layouts/default
+Rendering semesters/index
+  [4;35;1mSemester Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/semesters]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:15:37) [GET]
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.6ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (29.9ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.7ms)
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.6ms)
+Completed in 51ms (View: 33, DB: 11) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:15:38) [GET]
+  [4;36;1mBuilding Load (0.5ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:15:40) [GET]
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.7ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.6ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (31.5ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.6ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.9ms)
+Completed in 52ms (View: 34, DB: 13) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:16:03) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Clearance::UsersController#index (for 127.0.0.1 at 2010-02-02 08:16:04) [GET]
+  Parameters: {"controller"=>"clearance/users", "action"=>"index"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  <internal:prelude>:8:in `synchronize'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemestersController#index (for 127.0.0.1 at 2010-02-02 08:16:08) [GET]
+  [4;36;1mSemester Load (0.4ms)[0m   [0;1mSELECT * FROM `semesters` [0m
+Rendering template within layouts/default
+Rendering semesters/index
+  [4;35;1mSemester Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/semesters]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Clearance::UsersController#index (for 127.0.0.1 at 2010-02-02 08:16:13) [GET]
+  Parameters: {"controller"=>"clearance/users", "action"=>"index"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  <internal:prelude>:8:in `synchronize'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:17:12) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:17:13) [GET]
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.6ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.6ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (29.9ms)
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.7ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.7ms)
+Completed in 51ms (View: 33, DB: 12) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:19:17) [GET]
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;35;1mCourse Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mRoom Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.5ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mBuilding Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (1.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mStudent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;36;1mInstructor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `instructors`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (31.6ms)
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (2.9ms)
+  [4;36;1mRoom Load (0.2ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140273) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140273) [0m
+Rendered courses/_row (2.7ms)
+Completed in 53ms (View: 34, DB: 13) | 200 OK [http://localhost/courses]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:19:18) [GET]
+  [4;35;1mBuilding Load (0.5ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+
+ActionView::TemplateError (undefined method `room' for #<Building:0x0000010373d518>) on line #5 of app/views/buildings/_row.html.erb:
+2: <tr id="building_<%= building.id %>" class="<%= cycle 'odd', 'even', :name => 'buildings' %>">	
+3:   <td><%= link_to h(building.name), building_path(building)  %></td>
+4:   <td><%= link_to h(building.description), building_path(building) %></td>
+5:   <td><%= link_to h("#{building.room.building.name} #{building.room.name}"), edit_room_path(building.room) %></td>
+6:   <td><%= link_to building.rooms.count %></td>
+7:   <td><%= link_to image_tag('/images/icons/pencil.png'), edit_building_path(building) %>
+8:   <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => building_url(building), :method => :delete %></td>
+
+    app/views/buildings/_row.html.erb:5
+    app/views/buildings/index.html.erb:15
+    app/controllers/buildings_controller.rb:7:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (123.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:19:48) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (12.6ms)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.5ms)
+Completed in 30ms (View: 20, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:20:15) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (53.8ms)
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.8ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.8ms)
+Completed in 74ms (View: 64, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#destroy (for 127.0.0.1 at 2010-02-02 08:20:20) [DELETE]
+  Parameters: {"authenticity_token"=>"eQokwOhXR+pl/U86aTc7cfddloNwBT2/EB5I86caqUE=", "id"=>"135138680"}
+  [4;36;1mBuilding Columns (6.7ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (0.5ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 135138680) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+  [4;36;1mBuilding Destroy (65.2ms)[0m   [0;1mDELETE FROM `buildings` WHERE `id` = 135138680[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/buildings
+Completed in 88ms (DB: 78) | 302 Found [http://localhost/buildings/135138680]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:20:20) [GET]
+  [4;35;1mBuilding Load (1.1ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (11.4ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.7ms)
+Completed in 24ms (View: 13, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:20:23) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (51.3ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.7ms)
+Completed in 60ms (View: 52, DB: 4) | 200 OK [http://localhost/buildings]
+New Relic Agent not running
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:20:40) [GET]
+  [4;35;1mBuilding Load (0.5ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (12.2ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (1.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.7ms)
+Completed in 24ms (View: 14, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#show (for 127.0.0.1 at 2010-02-02 08:20:46) [GET]
+  Parameters: {"id"=>"135138680"}
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mBuilding Load (1.9ms)[0m   [0mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 135138680) [0m
+Rendering template within layouts/default
+Rendering buildings/show
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/buildings/135138680]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#show (for 127.0.0.1 at 2010-02-02 08:20:50) [GET]
+  Parameters: {"id"=>"135138680"}
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (1.8ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 135138680) [0m
+Rendering template within layouts/default
+Rendering buildings/show
+Completed in 11ms (View: 2, DB: 3) | 200 OK [http://localhost/buildings/135138680]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:20:57) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (10.2ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.2ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.5ms)
+Completed in 21ms (View: 12, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#show (for 127.0.0.1 at 2010-02-02 08:21:00) [GET]
+  Parameters: {"id"=>"135138680"}
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (2.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 135138680) [0m
+Rendering template within layouts/default
+Rendering buildings/show
+Completed in 11ms (View: 2, DB: 4) | 200 OK [http://localhost/buildings/135138680]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:21:53) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (10.4ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.5ms)
+Completed in 64ms (View: 55, DB: 4) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:22:26) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (11.9ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.4ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.9ms)
+Completed in 30ms (View: 21, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:22:41) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (10.1ms)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (3.0ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.8ms)
+Completed in 30ms (View: 20, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-02 08:22:55) [GET]
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM `courses` [0m
+Rendering template within layouts/default
+Rendering courses/index
+  [4;36;1mCourse Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.3ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (0.7ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mStudent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 120222578) [0m
+  [4;35;1mInstructor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instructors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 120222578) [0m
+Rendered courses/_row (29.9ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 234899329) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 365294332) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 365294332) [0m
+Rendered courses/_row (3.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 387675712) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 457897243) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 457897243) [0m
+Rendered courses/_row (44.2ms)
+  [4;35;1mRoom Load (0.3ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 793751700) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 1069993275) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE (`students`.course_id = 969140272) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `instructors` WHERE (`instructors`.course_id = 969140272) [0m
+Rendered courses/_row (3.5ms)
+Completed in 90ms (View: 73, DB: 11) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemestersController#index (for 127.0.0.1 at 2010-02-02 08:23:37) [GET]
+  [4;36;1mSemester Load (0.4ms)[0m   [0;1mSELECT * FROM `semesters` [0m
+Rendering template within layouts/default
+Rendering semesters/index
+  [4;35;1mSemester Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `semesters`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/semesters]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Clearance::UsersController#index (for 127.0.0.1 at 2010-02-02 08:23:40) [GET]
+  Parameters: {"controller"=>"clearance/users", "action"=>"index"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  <internal:prelude>:8:in `synchronize'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+  /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:24:37) [GET]
+  [4;36;1mBuilding Load (0.5ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (11.3ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.4ms)
+Completed in 29ms (View: 20, DB: 5) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:24:44) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (11.1ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.8ms)
+Completed in 29ms (View: 20, DB: 4) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:24:49) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (10.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.6ms)
+Completed in 21ms (View: 13, DB: 4) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:25:00) [GET]
+  [4;35;1mBuilding Load (0.4ms)[0m   [0mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;36;1mBuilding Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `buildings`[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (11.4ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (1.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.8ms)
+Completed in 29ms (View: 20, DB: 4) | 200 OK [http://localhost/buildings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:25:09) [GET]
+  [4;36;1mBuilding Load (0.4ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+ERROR: compiling _run_erb_app47views47buildings47_row46html46erb_locals_object_row_row_counter RAISED /Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:7: unknown regexp options - ag
+end pattern with unmatched parenthesis: /td>
+  <td><%= link_to image_tag('/mi
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._tag('/images/icons/pencil.png'), edit_building_path(buildin...
+...                               ^
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting ')'
+...('/images/icons/bin_closed.png'), :url => building_url(build...
+...                               ^
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:8: unterminated string meets end of file
+Function body:           def _run_erb_app47views47buildings47_row46html46erb_locals_object_row_row_counter(local_assigns)
+            old_output_buffer = output_buffer;row_counter = local_assigns[:row_counter];row = local_assigns[:row];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ;  building = row ; @output_buffer.concat "\n<tr id=\"building_"
+; @output_buffer.concat(( building.id ).to_s); @output_buffer.concat "\" class=\""; @output_buffer.concat(( cycle 'odd', 'even', :name => 'buildings' ).to_s); @output_buffer.concat "\">\t\n  <td>"
+; @output_buffer.concat(( link_to h(building.name), building_path(building)  ).to_s); @output_buffer.concat "</td>\n  <td>"
+; @output_buffer.concat(( link_to h(building.code), building_path(building)  ).to_s); @output_buffer.concat "</td>\n  <td>"
+; @output_buffer.concat(( link_to h(building.description), building_path(building) ).to_s); @output_buffer.concat "</td>\n  <td>"
+; @output_buffer.concat(( link_to building.rooms.count, building_path(building)</td>
+  <td><%= link_to image_tag('/images/icons/pencil.png'), edit_building_path(building) ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( link_to_remote image_tag('/images/icons/bin_closed.png'), :url => building_url(building), :method => :delete ).to_s); @output_buffer.concat "</td>\n</tr>\n"
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:77:in `module_eval'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:77:in `compile!'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:20:in `block in render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/opt/local/lib/ruby1.9/1.9.1/benchmark.rb:309:in `realtime'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/partials.rb:221:in `block in render_partial_collection'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/partials.rb:216:in `map'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/partials.rb:216:in `render_partial_collection'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/partials.rb:182:in `render_partial'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/base.rb:267:in `render'
+/Users/preston/Developer/git/campus_manager/app/views/buildings/index.html.erb:14:in `_run_erb_app47views47buildings47index46html46erb'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:34:in `block in render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/base.rb:306:in `with_template'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/renderable.rb:30:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:951:in `render'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/opt/local/lib/ruby1.9/1.9.1/benchmark.rb:309:in `realtime'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/preston/Developer/git/campus_manager/app/controllers/buildings_controller.rb:7:in `index'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/opt/local/lib/ruby1.9/1.9.1/benchmark.rb:309:in `realtime'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/preston/Developer/git/campus_manager/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/preston/Developer/git/campus_manager/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+/opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+/opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:7: unknown regexp options - ag
+end pattern with unmatched parenthesis: /td>
+  <td><%= link_to image_tag('/mi
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._tag('/images/icons/pencil.png'), edit_building_path(buildin...
+...                               ^
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting ')'
+...('/images/icons/bin_closed.png'), :url => building_url(build...
+...                               ^
+/Users/preston/Developer/git/campus_manager/app/views/buildings/_row.html.erb:8: unterminated string meets end of file) on line #7 of app/views/buildings/_row.html.erb:
+4:   <td><%= link_to h(building.code), building_path(building)  %></td>
+5:   <td><%= link_to h(building.description), building_path(building) %></td>
+6:   <td><%= link_to building.rooms.count, building_path(building)</td>
+7:   <td><%= link_to image_tag('/images/icons/pencil.png'), edit_building_path(building) %>
+8:   <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => building_url(building), :method => :delete %></td>
+9: </tr>
+
+    app/views/buildings/index.html.erb:14
+    app/controllers/buildings_controller.rb:7:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:111:in `service'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/httpserver.rb:70:in `run'
+    /opt/local/lib/ruby1.9/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (76.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#index (for 127.0.0.1 at 2010-02-02 08:25:14) [GET]
+  [4;36;1mBuilding Load (1.8ms)[0m   [0;1mSELECT * FROM `buildings` [0m
+Rendering template within layouts/default
+Rendering buildings/index
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mRoom Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 135138680) [0m
+Rendered buildings/_row (12.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 595645194) [0m
+Rendered buildings/_row (2.0ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `rooms` WHERE (`rooms`.building_id = 1069993275) [0m
+Rendered buildings/_row (1.7ms)
+Completed in 34ms (View: 23, DB: 6) | 200 OK [http://localhost/buildings]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuildingsController#show (for 127.0.0.1 at 2010-02-02 08:25:17) [GET]
+  Parameters: {"id"=>"135138680"}
+  [4;35;1mBuilding Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `buildings`[0m
+  [4;36;1mBuilding Load (2.1ms)[0m   [0;1mSELECT * FROM `buildings` WHERE (`buildings`.`id` = 135138680) [0m
+Rendering template within layouts/default
+Rendering buildings/show
+Completed in 12ms (View: 3, DB: 4) | 200 OK [http://localhost/buildings/135138680]

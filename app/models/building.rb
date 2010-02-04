@@ -4,6 +4,6 @@ class Building < ActiveRecord::Base
   
   validates_presence_of  :code
   validates_presence_of  :name
-  validates_presence_of  :dsecription
+  validates_presence_of  :description
   
 end

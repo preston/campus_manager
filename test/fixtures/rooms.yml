@@ -17,3 +17,8 @@ cntr_152:
   name: '152'
   description: Small computer lab with individual Windows workstations.
   building: cntr
+
+union_999:
+  name: '999'
+  description: Super-secret hidden swimming pool on the roof.
+  building: union

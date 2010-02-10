@@ -22,3 +22,12 @@ union_999:
   name: '999'
   description: Super-secret hidden swimming pool on the roof.
   building: union
+  
+<% for i in 1..80 %>
+
+union_<%= i %>:
+  name: "<%= i %>"
+  description: "A typical classroom."
+  building: union
+
+<% end %>

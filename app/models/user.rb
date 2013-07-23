@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 
-  has_many  :instructors
-  has_many  :students
+	validates_presence_of	:email
+
+	has_many  :instructors
+	has_many  :students
 
 end

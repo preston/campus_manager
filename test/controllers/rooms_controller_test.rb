@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class RoomsControllerTest < ActionController::TestCase
+  setup do
+    @room = rooms(:one)
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -14,30 +18,30 @@ class RoomsControllerTest < ActionController::TestCase
 
   test "should create room" do
     assert_difference('Room.count') do
-      post :create, :room => { }
+      post :create, room: { building_id: @room.building_id, description: @room.description, name: @room.name }
     end
 
     assert_redirected_to room_path(assigns(:room))
   end
 
   test "should show room" do
-    get :show, :id => rooms(:one).to_param
+    get :show, id: @room
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => rooms(:one).to_param
+    get :edit, id: @room
     assert_response :success
   end
 
   test "should update room" do
-    put :update, :id => rooms(:one).to_param, :room => { }
+    patch :update, id: @room, room: { building_id: @room.building_id, description: @room.description, name: @room.name }
     assert_redirected_to room_path(assigns(:room))
   end
 
   test "should destroy room" do
     assert_difference('Room.count', -1) do
-      delete :destroy, :id => rooms(:one).to_param
+      delete :destroy, id: @room
     end
 
     assert_redirected_to rooms_path

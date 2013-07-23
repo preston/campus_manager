@@ -6,9 +6,6 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 
-# TODO Remove after Rails v4 upgrade!
-gem 'protected_attributes'
-
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -26,6 +23,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 gem 'slim-rails'
+
+group :development do
+	gem	'binding_of_caller'
+	gem 'better_errors'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

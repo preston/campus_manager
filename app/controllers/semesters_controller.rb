@@ -1,85 +1,74 @@
 class SemestersController < ApplicationController
+  before_action :set_semester, only: [:show, :edit, :update, :destroy]
+
   # GET /semesters
-  # GET /semesters.xml
+  # GET /semesters.json
   def index
     @semesters = Semester.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @semesters }
-    end
   end
 
   # GET /semesters/1
-  # GET /semesters/1.xml
+  # GET /semesters/1.json
   def show
-    @semester = Semester.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @semester }
-    end
   end
 
   # GET /semesters/new
-  # GET /semesters/new.xml
   def new
     @semester = Semester.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @semester }
-    end
   end
 
   # GET /semesters/1/edit
   def edit
-    @semester = Semester.find(params[:id])
   end
 
   # POST /semesters
-  # POST /semesters.xml
+  # POST /semesters.json
   def create
-    @semester = Semester.new(params[:semester])
+    @semester = Semester.new(semester_params)
 
     respond_to do |format|
       if @semester.save
-        flash[:notice] = 'Semester was successfully created.'
-        format.html { redirect_to(@semester) }
-        format.xml  { render :xml => @semester, :status => :created, :location => @semester }
+        format.html { redirect_to @semester, notice: 'Semester was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @semester }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @semester.errors, :status => :unprocessable_entity }
+        format.html { render action: 'new' }
+        format.json { render json: @semester.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PUT /semesters/1
-  # PUT /semesters/1.xml
+  # PATCH/PUT /semesters/1
+  # PATCH/PUT /semesters/1.json
   def update
-    @semester = Semester.find(params[:id])
-
     respond_to do |format|
-      if @semester.update_attributes(params[:semester])
-        flash[:notice] = 'Semester was successfully updated.'
-        format.html { redirect_to(@semester) }
-        format.xml  { head :ok }
+      if @semester.update(semester_params)
+        format.html { redirect_to @semester, notice: 'Semester was successfully updated.' }
+        format.json { head :no_content }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @semester.errors, :status => :unprocessable_entity }
+        format.html { render action: 'edit' }
+        format.json { render json: @semester.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /semesters/1
-  # DELETE /semesters/1.xml
+  # DELETE /semesters/1.json
   def destroy
-    @semester = Semester.find(params[:id])
     @semester.destroy
-
     respond_to do |format|
-      format.html { redirect_to(semesters_url) }
-      format.xml  { head :ok }
+      format.html { redirect_to semesters_url }
+      format.json { head :no_content }
     end
   end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_semester
+      @semester = Semester.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def semester_params
+      params.require(:semester).permit(:name, :start_date, :end_date)
+    end
 end

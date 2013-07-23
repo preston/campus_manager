@@ -1,7 +1,7 @@
 CampusManager::Application.routes.draw do
 
-  resources :lessons
   resources :users
+  resources :lessons
   resources :courses
   resources :rooms
   resources :buildings

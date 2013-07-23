@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class CoursesControllerTest < ActionController::TestCase
+  setup do
+    @course = courses(:one)
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -14,30 +18,30 @@ class CoursesControllerTest < ActionController::TestCase
 
   test "should create course" do
     assert_difference('Course.count') do
-      post :create, :course => { }
+      post :create, course: { description: @course.description, name: @course.name, room_id: @course.room_id, semester_id: @course.semester_id }
     end
 
     assert_redirected_to course_path(assigns(:course))
   end
 
   test "should show course" do
-    get :show, :id => courses(:one).to_param
+    get :show, id: @course
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => courses(:one).to_param
+    get :edit, id: @course
     assert_response :success
   end
 
   test "should update course" do
-    put :update, :id => courses(:one).to_param, :course => { }
+    patch :update, id: @course, course: { description: @course.description, name: @course.name, room_id: @course.room_id, semester_id: @course.semester_id }
     assert_redirected_to course_path(assigns(:course))
   end
 
   test "should destroy course" do
     assert_difference('Course.count', -1) do
-      delete :destroy, :id => courses(:one).to_param
+      delete :destroy, id: @course
     end
 
     assert_redirected_to courses_path

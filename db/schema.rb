@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130723212025) do
+ActiveRecord::Schema.define(version: 20130723213829) do
 
   create_table "buildings", force: true do |t|
     t.string   "code"
@@ -24,25 +24,25 @@ ActiveRecord::Schema.define(version: 20130723212025) do
   add_index "buildings", ["code"], name: "index_buildings_on_code", unique: true
 
   create_table "courses", force: true do |t|
-    t.integer  "room_id",     null: false
-    t.integer  "semester_id", null: false
-    t.string   "name",        null: false
-    t.text     "description", null: false
+    t.integer  "room_id"
+    t.integer  "semester_id"
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "instructors", force: true do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "course_id",  null: false
+    t.integer  "user_id"
+    t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "lessons", force: true do |t|
     t.integer  "course_id"
-    t.string   "name",        null: false
-    t.text     "description", null: false
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -56,9 +56,9 @@ ActiveRecord::Schema.define(version: 20130723212025) do
   end
 
   create_table "rooms", force: true do |t|
-    t.integer  "building_id", null: false
-    t.string   "name",        null: false
-    t.text     "description", null: false
+    t.integer  "building_id"
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -72,25 +72,16 @@ ActiveRecord::Schema.define(version: 20130723212025) do
   end
 
   create_table "students", force: true do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "course_id",  null: false
+    t.integer  "user_id"
+    t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
     t.string   "email"
-    t.string   "encrypted_password", limit: 128
-    t.string   "salt",               limit: 128
-    t.string   "confirmation_token", limit: 128
-    t.string   "remember_token",     limit: 128
-    t.boolean  "email_confirmed",                default: false, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "users", ["email"], name: "index_users_on_email"
-  add_index "users", ["id", "confirmation_token"], name: "index_users_on_id_and_confirmation_token"
-  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end

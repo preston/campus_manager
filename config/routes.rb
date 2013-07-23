@@ -1,4 +1,4 @@
-CampusManager::Application.routes.draw do |map|
+CampusManager::Application.routes.draw do
 
   resources :lessons
   resources :courses

@@ -1,7 +1,7 @@
 class CreateLessons < ActiveRecord::Migration
   def self.up
     create_table :lessons do |t|
-      t.int :course_id
+      t.integer :course_id
       t.string :name, :null => false
       t.text :description, :null => false
 

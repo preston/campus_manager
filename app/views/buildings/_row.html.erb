@@ -1,9 +1,0 @@
-<% building = row %>
-<tr id="building_<%= building.id %>" class="<%= cycle 'odd', 'even', :name => 'buildings' %>">	
-  <td><%= link_to h(building.name), building_path(building)  %></td>
-  <td><%= link_to h(building.code), building_path(building)  %></td>
-  <td><%= link_to h(building.description), building_path(building) %></td>
-  <td><%= link_to building.rooms.count, building_path(building) %></td>
-  <td><%= link_to image_tag('/images/icons/pencil.png'), edit_building_path(building) %>
-  <%= link_to_remote image_tag('/images/icons/bin_closed.png'), :url => building_url(building), :method => :delete %></td>
-</tr>

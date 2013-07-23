@@ -1,85 +1,74 @@
 class BuildingsController < ApplicationController
+  before_action :set_building, only: [:show, :edit, :update, :destroy]
+
   # GET /buildings
-  # GET /buildings.xml
+  # GET /buildings.json
   def index
     @buildings = Building.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @buildings }
-    end
   end
 
   # GET /buildings/1
-  # GET /buildings/1.xml
+  # GET /buildings/1.json
   def show
-    @building = Building.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @building }
-    end
   end
 
   # GET /buildings/new
-  # GET /buildings/new.xml
   def new
     @building = Building.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @building }
-    end
   end
 
   # GET /buildings/1/edit
   def edit
-    @building = Building.find(params[:id])
   end
 
   # POST /buildings
-  # POST /buildings.xml
+  # POST /buildings.json
   def create
-    @building = Building.new(params[:building])
+    @building = Building.new(building_params)
 
     respond_to do |format|
       if @building.save
-        flash[:notice] = 'Building was successfully created.'
-        format.html { redirect_to(@building) }
-        format.xml  { render :xml => @building, :status => :created, :location => @building }
+        format.html { redirect_to @building, notice: 'Building was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @building }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @building.errors, :status => :unprocessable_entity }
+        format.html { render action: 'new' }
+        format.json { render json: @building.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PUT /buildings/1
-  # PUT /buildings/1.xml
+  # PATCH/PUT /buildings/1
+  # PATCH/PUT /buildings/1.json
   def update
-    @building = Building.find(params[:id])
-
     respond_to do |format|
-      if @building.update_attributes(params[:building])
-        flash[:notice] = 'Building was successfully updated.'
-        format.html { redirect_to(@building) }
-        format.xml  { head :ok }
+      if @building.update(building_params)
+        format.html { redirect_to @building, notice: 'Building was successfully updated.' }
+        format.json { head :no_content }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @building.errors, :status => :unprocessable_entity }
+        format.html { render action: 'edit' }
+        format.json { render json: @building.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /buildings/1
-  # DELETE /buildings/1.xml
+  # DELETE /buildings/1.json
   def destroy
-    @building = Building.find(params[:id])
     @building.destroy
-
     respond_to do |format|
-      format.html { redirect_to(buildings_url) }
-      format.xml  { head :ok }
+      format.html { redirect_to buildings_url }
+      format.json { head :no_content }
     end
   end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_building
+      @building = Building.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def building_params
+      params.require(:building).permit(:code, :name, :description)
+    end
 end

@@ -6,6 +6,9 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 
+# TODO Remove after Rails v4 upgrade!
+gem 'protected_attributes'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 

@@ -1,0 +1,21 @@
+h1 Listing instructors
+
+table
+  tr
+    th User
+    th Course
+    th
+    th
+    th
+
+  - @instructors.each do |instructor|
+    tr
+      td = instructor.user_id
+      td = instructor.course_id
+      td = link_to 'Show', instructor
+      td = link_to 'Edit', edit_instructor_path(instructor)
+      td = link_to 'Destroy', instructor, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Instructor', new_instructor_path

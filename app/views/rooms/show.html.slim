@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Building:
+  = @room.building_id
+p
+  strong Name:
+  = @room.name
+p
+  strong Description:
+  = @room.description
+
+= link_to 'Edit', edit_room_path(@room)
+'|
+= link_to 'Back', rooms_path

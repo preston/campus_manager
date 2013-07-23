@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Room:
+  = @course.room_id
+p
+  strong Semester:
+  = @course.semester_id
+p
+  strong Name:
+  = @course.name
+p
+  strong Description:
+  = @course.description
+
+= link_to 'Edit', edit_course_path(@course)
+'|
+= link_to 'Back', courses_path

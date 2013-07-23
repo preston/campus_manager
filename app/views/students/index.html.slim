@@ -1,0 +1,21 @@
+h1 Listing students
+
+table
+  tr
+    th User
+    th Course
+    th
+    th
+    th
+
+  - @students.each do |student|
+    tr
+      td = student.user_id
+      td = student.course_id
+      td = link_to 'Show', student
+      td = link_to 'Edit', edit_student_path(student)
+      td = link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Student', new_student_path

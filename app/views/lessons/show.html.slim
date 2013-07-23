@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Course:
+  = @lesson.course_id
+p
+  strong Name:
+  = @lesson.name
+p
+  strong Description:
+  = @lesson.description
+
+= link_to 'Edit', edit_lesson_path(@lesson)
+'|
+= link_to 'Back', lessons_path
